@@ -9,7 +9,7 @@ $education=$_POST['education'];
 $skills=$_POST['userskill'];
 
 
-$con=mysqli_connect("localhost", "root", "root", "project");
+$con=mysqli_connect("localhost", "root", "admin", "jobproject");
 
 
 $query="SELECT * FROM `userdetail`";
