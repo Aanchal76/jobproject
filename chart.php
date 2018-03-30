@@ -2,7 +2,7 @@
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
 
-$connect = mysqli_connect("localhost", "root", "root", "project");
+$connect = mysqli_connect("localhost", "root", "admin", "jobproject");
 $query="SELECT * FROM `userdetail` where dateposted between date_sub(now(),INTERVAL 1 WEEK) and now()";
 $result = mysqli_query($connect, $query);
 $chart_data = '';
