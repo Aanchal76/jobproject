@@ -12,7 +12,7 @@ $education=$_POST['education'];
 $skills = implode(',', $_POST['userskill']);
 
 
-$con=mysqli_connect("localhost", "root", "root", "project");
+$con=mysqli_connect("localhost", "root", "admin", "jobproject");
 
 		$query="INSERT INTO userdetail(fname,lname,email,age,location,gender,education,skills, dateposted) VALUES('$fname','$lname','$email','$age','$location','$gender','$education','$skills',now())";
 		$run= mysqli_query($con,$query);
